@@ -21,6 +21,14 @@ return {
             popup_border_style = "rounded",
             enable_git_status = true,
             enable_diagnostics = true,
+
+            filesystem = {
+                filtered_items = {
+                    always_show = {
+                        ".gitignore"
+                    }
+                }
+            }
         })
 
         vim.keymap.set("n", "<leader>n", "Neotree filesystem reveal left<CR>", {})
