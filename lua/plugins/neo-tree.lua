@@ -27,8 +27,9 @@ return {
 			},
 		})
 
-		vim.keymap.set("n", "<leader>n", "Neotree filesystem reveal left<CR>", {})
+		vim.keymap.set("n", "<leader>n", ":Neotree filesystem reveal left<CR>", {})
 
 		vim.cmd("Neotree filesystem reveal left<CR>")
+        vim.cmd("wincmd l")
 	end,
 }
